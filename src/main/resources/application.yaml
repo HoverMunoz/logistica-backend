@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: logistica-backend
+  datasource:
+    url: jdbc:mysql://localhost:3306/logistica?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC
+    username: logistica_user
+    password: 1234
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+server:
+  port: 8081
